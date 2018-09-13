@@ -4,7 +4,8 @@ import {
   RadioButtonGroupProps,
   CheckboxProps,
   DatePickerProps,
-  TimePickerProps
+  TimePickerProps,
+  ToggleProps
 } from 'material-ui';
 import { WrappedFieldProps } from 'redux-form';
 import { Component, InputHTMLAttributes } from 'react';
@@ -27,4 +28,7 @@ declare module 'redux-form-material-ui' {
 
   export class TimePicker
     extends Component<TimePickerProps & WrappedFieldProps & InputHTMLAttributes<HTMLInputElement>> {}
+
+  export class Toggle
+    extends Component<ToggleProps & WrappedFieldProps & InputHTMLAttributes<HTMLInputElement>> {}
 }
